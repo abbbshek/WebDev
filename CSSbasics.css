@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS basic properties</title>
+
+    <style>
+        /* Universal selector * {
+            color: red;
+        } */
+
+        h1 {
+            color:cornflowerblue;
+        }
+        p {
+            color: brown;
+        }
+
+        #h2color {color: palevioletred;}
+        .classcolor{color: chartreuse;}
+
+        h3, h4, h5 {color: rgb(78, 157, 8);}
+
+        #first p{color: darkorchid;}
+        
+    </style> <!--Internal styling-->
+
+    <link rel="stylesheet" href="index.css"> <!--External styling-->
+
+</head>
+<body>
+
+    <h1>Hello</h1>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, labore.</p>
+
+    <p style="color: rebeccapurple;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, labore.</p> <!--Inline styling-->
+
+    <div id="h2color">Using ID selector</div>
+
+    <div class="classcolor">Using class selector</div>
+
+    <h3>Group selectors</h3>
+    <h4>Group selectors</h4>
+    <h5>Group selectors</h5>
+
+    <div id="first"> <p>Descendant selectors</p>
+    </div>
+    <p>Descendant selector</p>
+
+</body>
+</html>
