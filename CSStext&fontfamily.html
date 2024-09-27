@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Text and font properties</title>
+
+    <!-- Font Family (taken from google fonts)-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- Tick icon (taken from google fonts) -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <style>
+        
+        .box123{height: 50px; width: 100px;}
+        #box1{background-color: darkgrey; text-align: left;}
+        #box2{background-color: rgb(115, 114, 114); text-align: center;}
+        #box3{background-color: rgb(56, 56, 56); text-align: right;}
+
+        #box4{
+            height: 50px; 
+            width: 100px; 
+            background-color: rgb(235, 125, 125); 
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        #box5{
+            height: 50px; 
+            width: 100px; 
+            background-color: rgb(236, 107, 107); 
+            text-align: center;
+            text-decoration: overline;
+        }
+
+        #box6{
+            height: 50px; 
+            width: 100px; 
+            background-color: rgb(239, 69, 69); 
+            text-align: center;
+            text-decoration: line-through;
+        }
+
+        .box789{text-decoration: underline;}
+
+        #box7{
+            height: 50px; 
+            width: 100px; 
+            background-color: rgb(92, 205, 218); 
+            text-align: center;
+            text-decoration-style: dashed;
+        }
+
+        #box8{
+            height: 50px; 
+            width: 100px; 
+            background-color: rgb(54, 204, 220); 
+            text-align: center;
+            text-decoration-style: dotted;
+        }
+
+        #box9{
+            height: 50px; 
+            width: 100px; 
+            background-color: rgb(8, 199, 220); 
+            text-align: center;
+            text-decoration-style: wavy;
+        }
+
+        #text1{text-transform: uppercase;}
+        #text2{text-transform: lowercase;}
+        #text3{text-transform: capitalize;}
+        #text4{text-transform: none;}
+
+        #line-height1{line-height: 10px;}
+        #line-height2{line-height: 20px;}
+
+        #font-size1{font-size: 15px;}
+        #font-size2{font-size: 20px;}
+
+        #weight1{font-weight: 100;}
+        #weight2{font-weight: 900;}
+
+        #fontstyle1{font-style: italic;}
+        #fontstyle2{font-style: oblique;}
+        #fontstyle3{font-style: normal;}
+        
+        #font-family{font-family: "Fredoka", sans-serif;}
+
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+
+</head>
+<body>
+    <div id="box1" class="box123">Box 1</div><br>
+    <div id="box2" class="box123">Box 2</div><br>
+    <div id="box3" class="box123">Box 3</div><br>
+
+    <div id="box4">Box Box Box</div><br>
+    <div id="box5">Box Box Box</div><br>
+    <div id="box6">Box Box Box</div><br>
+
+    <div id="box7" class="box789">Box Box Box</div><br>
+    <div id="box8" class="box789">Box Box Box</div><br>
+    <div id="box9" class="box789">Box Box Box</div><br>
+
+    <div style="background-color: rgb(218, 106, 21); width: 100px; text-align: center;">
+        <h4 id="text1">First text</h4>
+        <h4 id="text2">Second text</h4>
+        <h4 id="text3">Third text</h4>
+        <h4 id="text4">Third text</h4>
+    </div><br>
+
+    <p id="line-height1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur ipsam sint in porro, quod hic amet accusantium incidunt nobis fugiat asperiores magnam repellat, repudiandae quaerat cum deleniti. Tempora tempore obcaecati laudantium perspiciatis iusto sequi itaque, doloremque, quis exercitationem dolores eius quibusdam nesciunt illo! Minima fugit quam ullam iusto eius sapiente.</p><br>
+
+    <p id="line-height2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dolores atque minima. Totam, voluptate? Reprehenderit ratione expedita a, eum eligendi ipsa. Odit unde repellat quaerat quod dolor libero ab rerum commodi sunt! Corporis, ratione nihil ab sed voluptatem quo quasi rerum quis tempore fugiat blanditiis. Ab laborum suscipit ullam deserunt.</p><br>
+
+    <p id="font-size1">Font size</p>
+    <p id="font-size2">Font size</p><br>
+
+    <p id="weight1">Font weight</p>
+    <p id="weight2">Font weight</p><br>
+
+    <p id="fontstyle1">Font style</p>
+    <p id="fontstyle2">Font style</p>
+    <p id="fontstyle3">Font style</p><br>
+
+    <p id="font-family">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ex ad quae unde, obcaecati adipisci quaerat? Dolorem, sit deserunt! Molestiae eos quia deleniti, distinctio mollitia veniam veritatis accusant ium harum ipsam fugit eligendi minus tenetur odit excepturi debitis nesciunt architecto! Eveniet beatae cum asperiores neque, reprehenderit quos veniam officiis minus consequuntur.</p>
+
+    <span class="material-symbols-outlined">check_circle</span>
+</body>
+</html>
