@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Box Model</title>
+    <style>
+        *{margin: 0px; padding: 0px;}
+        #padded {
+            height: 15px;
+            width: 50px;
+            background-color: cadetblue;
+            padding: 10px 10px 10px 10px; /* or padding: 10px; */
+        }
+
+        #margin {
+            /* height: 15px;
+            width: 50px; */
+            background-color: cadetblue;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 10px;
+            box-sizing: content-box;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="padded">Padding</div>
+    <div id="margin">Margin</div>
+</body>
+</html>
