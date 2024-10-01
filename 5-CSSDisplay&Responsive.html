@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Display & Responsiveness</title>
+    <style>
+
+        * { 
+            margin: 0px; 
+            padding: 0px;
+            font-size: 20px;
+        }
+
+        .display_inline {
+            height: 50px;
+            width: 50px;
+            margin: 5px;
+            background-color: crimson;
+            
+            display: inline;
+
+            /* Inline doesn't allow to give height and width but block does. So we use inline-block so that it works as inline but also customizable height & width like block. */
+        }
+
+        .display_inline_block{
+            height: 50px;
+            width: 100px;
+            margin: 5px;
+            background-color:chocolate;
+
+            display: inline-block;
+        }
+
+        .display_none{
+            height: 50px;
+            width: 100px;
+            margin: 5px;
+            background-color:#009999;
+
+            display: inline-block;
+            
+        }
+
+        #box6{
+            display: none; /*Used instead of opacity 0/visibility: hidden because opacity 0/visibility: hidden takes space but display: none; doesn't*/
+        }
+
+        /* Relative units */
+
+        #first{
+            height: 100px;
+            width: 100px;
+            background-color: #009999;
+        }
+
+        #second{
+            background-color: blueviolet;
+            height: 30%;  /* percentage of parent. if parent not available then percentage of full page */
+            width: 50%;
+        }
+        
+        /* EM */
+
+        #third{
+            height: 150px;
+            width: 150px;
+            background-color: blueviolet;
+            font-size: 25px;
+        }
+
+        #fourth{
+            background-color: brown;
+            font-size: 2em; /*Multiple of parents font */
+        }
+
+        #fifth{
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+            font-size: 25px;
+        }
+
+        #sixth{
+            background-color: brown;
+            font-size: 2rem; /*Multiple of root font */
+        }
+
+        #viewport{
+            height: 50vh;
+            width: 50vw;
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="display_inline">Box 1</div>
+    <div id="box2" class="display_inline">Box 2</div><br>
+
+    <div id="box3" class="display_inline_block">Box 3</div>
+    <div id="box4" class="display_inline_block">Box 4</div><br>
+
+    <div id="box5" class="display_none">Box 5</div>
+    <div id="box6" class="display_none">Box 6</div>
+    <div id="box7" class="display_none">Box 7</div><br>
+
+    <!-- Relative units -->
+
+    <!-- percentage -->
+
+    <div id="first">first
+        <div id="second">second</div>
+    </div><br>
+
+    <!-- EM -->
+
+    <div id="third">third
+        <div id="fourth">fourth</div>
+    </div><br>
+
+    <!-- REM -->
+    <div id="fifth">fifth
+        <div id="sixth">sixth</div>
+    </div><br>
+
+    <!-- VH & VW (height and width of the visible screen at the moment)-->
+    <div id="viewport"></div>
+
+</body>
+</html>
