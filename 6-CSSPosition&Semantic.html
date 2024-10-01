@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Posttion property & Semantic  tags</title>
+    <style>
+        * {
+            margin: 0px; padding: 0px;
+        } 
+        .box{
+           height: 50px; 
+           width: 50px;
+           background-color: #009999;
+           margin: 5px;
+        }
+
+        .fixed-test{
+           height: 100px; 
+           width: 100px;
+           background-color: #990082;
+           margin: 5px;
+           display: block;
+        }
+
+        #box1{
+            position: static;   /*stays at the regular position according to the document, doesnt move */
+        }
+
+        #box2{
+            position: relative; /* its relative to its original position if it would have been a static */
+            top: 10px;
+            left: 60px;
+        }
+
+        #box3{
+            position: absolute; /*its the position relative to the top left corner of the page. also just like fixed its z index is more the static and relative thus its above  them */
+            top: 100px;
+            left: 120px
+        }
+
+        #box4{
+            position: fixed; /*it moves with the scroll bar and its z index is also more*/
+            left: 25px;
+        }
+
+        .z-index{
+            height: 100px;
+            width: 100px;
+            
+            position: absolute;
+            margin: 5px;
+            text-align: center;
+        }
+
+        #z-index1{
+            z-index: 1;
+            background-color: crimson;
+            left: 20px;
+        }
+
+        #z-index2{
+            z-index: 2;
+            background-color:blue;
+            top: 930px;
+            left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">Box 1</div>
+    <div id="box2" class="box">Box 2</div>
+    <div id="box3" class="box">Box 3</div>
+    <div id="box4" class="box">Box 4</div><br>
+    <div class="fixed-test">fixed-test1</div>
+    <div class="fixed-test">fixed-test2</div>
+    <div class="fixed-test">fixed-test3</div>
+    <div class="fixed-test">fixed-test4</div>
+    <div class="fixed-test">fixed-test5</div>
+    <div class="fixed-test">fixed-test6</div>
+    <div class="fixed-test">fixed-test7</div><br>
+
+    <div id="z-index1" class="z-index">z-index1</div>
+    <div id="z-index2" class="z-index">z-index2</div>
+
+    <!-- Semantic tags (Helps in SEO) -->
+
+    <!-- <header>
+        <nav></nav>
+    </header>
+
+    <main>
+        <section>
+            <h1></h1>
+            <article></article>
+            <article></article>
+            <article></article>
+        </section>
+        <section>
+            <h1></h1>
+            <article></article>
+            <article></article>
+            <article></article>
+        </section>
+    </main>
+
+    <aside>
+        <Section>For ads and all</Section>
+    </aside>
+
+    <footer></footer> -->
+</body>
+</html>
