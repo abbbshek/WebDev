@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flexbox</title>
+    <style>
+
+        /* Float property */
+
+        .container{
+            height: 100px;
+            width: 500px;
+            text-align: center;
+            background-color: cadetblue;
+            border: 2px solid black;
+        }
+
+        #box1{
+            height: 80px;
+            width: 150px;
+            float: left;
+            margin: 5px;
+            background-color: #009999;
+            border: 2px solid black;
+        }
+
+        #box2{
+            height: 80px;
+            width: 150px;
+            float: right;
+            margin: 5px;
+            background-color: #009999;
+            border: 2px solid black;
+        }
+
+        /* Flexbox */
+
+        .boxes {
+            height: 75px;
+            width: 75px;
+            margin: 10px;
+            text-align: center;
+            background-color: #009999;
+            border: 2px solid black;
+        }
+
+        #container1 {
+            height: 150px;
+            width: 600px;
+            margin: 5px;
+            background-color: cadetblue;
+            border: 2px solid black;
+            display: flex;
+
+            flex-direction: row;
+            /* flex-direction: row-reverse; */
+        }
+
+        #container2 {
+            height: 450px;
+            width: 200px;
+            margin: 5px;
+            background-color: cadetblue;
+            border: 2px solid black;
+            display: flex;
+
+            flex-direction: column; 
+            /* flex-direction: column-reverse; */
+        }
+
+        /* Flexbox justify content */
+
+        #container3 {
+            height: 100px;
+            width: 800px;
+            margin: 5px;
+            background-color: cadetblue;
+            border: 2px solid black;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        #container4 {
+            height: 100px;
+            width: 800px;
+            margin: 5px;
+            background-color: cadetblue;
+            border: 2px solid black;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        #container5 {
+            height: 100px;
+            width: 800px;
+            margin: 5px;
+            background-color: cadetblue;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+        }
+
+        #container6 {
+            height: 100px;
+            width: 800px;
+            margin: 5px;
+            background-color: cadetblue;
+            border: 2px solid black;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #container7 {
+            height: 100px;
+            width: 800px;
+            margin: 5px;
+            background-color: cadetblue;
+            border: 2px solid black;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #container8 {
+            height: 100px;
+            width: 800px;
+            margin: 5px;
+            background-color: cadetblue;
+            border: 2px solid black;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        /* Flexbox wrap content */
+
+        #container9 {
+            height: 100px;
+            width: 500px;
+            margin: 5px;
+            background-color: cadetblue;
+            border: 2px solid black;
+            display: flex;
+
+            flex-wrap: wrap; /*(when width is reduced shifts the extra block above) */
+            /* flex-wrap: wrap-reverse; (when width is reduced shifts the extra block above)
+            flex-wrap: nowrap; (when width is reduced shrinks the blocks just like default)*/
+        }
+
+        #container10 {
+            height: 300px;
+            width: 800px;
+            margin: 5px;
+            background-color: cadetblue;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #container11 {
+            height: 600px;
+            width: 300px;
+            margin: 5px;
+            background-color: cadetblue;
+            border: 2px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;     /*(almost equivalent to flex-direction) */
+            align-content: space-around;   /*(equivalent to justify-content) */
+        }
+
+        #container12 {
+            height: 400px;
+            width: 600px;
+            margin: 5px;
+            background-color: cadetblue;
+            border: 2px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: start;
+        }
+
+        #container13 {
+            height: 400px;
+            width: 300px;
+            margin: 5px;
+            background-color: cadetblue;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+        }
+
+        #container14 {
+            height: 400px;
+            width: 600px;
+            margin: 5px;
+            background-color: cadetblue;
+            border: 2px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: start;
+        }
+
+        #container15 {
+            height: 400px;
+            width: 600px;
+            margin: 5px;
+            background-color: cadetblue;
+            border: 2px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: start;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Float property -->
+
+    <h2>Float property</h2>
+    <div class="container">
+        <div id="box1" class="box">Box1</div>
+        <div id="box2" class="box">Box2</div>
+    </div>
+
+    <!-- Flexbox (Flexbox is a one dimensional(opp to grid) layout method arranging items in rows or columns). Items flex (expand) to fill additional space or shrink to fit into smaller spaces -->
+
+    <h2>Flexbox</h2>
+    <div id="container1">
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div>
+    </div>
+
+    <div id="container2">
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div><br>
+    </div>
+
+    <!-- Flexbox justify content -->
+
+    <h2>Flexbox justify content</h2>
+    <div id="container3">
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div><br>
+    </div>
+
+    <div id="container4">
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div><br>
+    </div>
+
+    <div id="container5">
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div><br>
+    </div>
+
+    <div id="container6">
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div><br>
+    </div>
+
+    <div id="container7">
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div><br>
+    </div>
+
+    <div id="container8">
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div><br>
+    </div>
+
+    <h2>Flexbox wrap content</h2>
+    <div id="container9">
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div><br>
+    </div>
+
+    <h2>Flexbox align items</h2> <!-- with justify-content the items get aligned along main axis but to align along cross axis we use align items -->
+    <div id="container10">
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div><br>
+    </div>
+
+    <h2>Flexbox align content</h2>
+    <div id="container11">
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div><br>
+    </div>
+
+    <h2>Flexbox align self</h2>
+    <div id="container12">
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div>
+        <div class="boxes" style= "align-self: center;" >Box</div>
+        <div class="boxes">Box</div><br>
+    </div>
+
+    <h2>Flexbox flex shrink</h2>
+    <div id="container13">
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div>
+        <div class="boxes" style="flex-shrink: 3;">Box</div> <!-- the no. tells to shrink by Multiple of the regular shrink of other items -->
+        <div class="boxes">Box</div><br>
+    </div>
+
+    <h2>Flexbox flex grow</h2>
+    <div id="container14">
+        <div class="boxes">Box</div>
+        <div class="boxes">Box</div>
+        <div class="boxes" style="flex-grow: 1;">Box</div> <!-- occupies remaining space. if other boxes are set to 1 and box 3 is set to 2 then box 3 will be 2x bigger -->
+        <div class="boxes">Box</div><br>
+    </div>
+
+    <h2>Flexbox flex order</h2> <!-- changes order of items -->
+    <div id="container15">
+        <div class="boxes" style="order: 3;">Box 1</div>
+        <div class="boxes" style="order: 1;">Box 2</div>
+        <div class="boxes" style="order: 2;">Box 4</div>
+        <div class="boxes" style="order: 3;">Box 3</div><br>
+    </div>
+
+</body>
+</html>
