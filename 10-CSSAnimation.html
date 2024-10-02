@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            background-color: rgb(228, 149, 92);
+            border: 2px solid black;
+            border-radius: 10px;
+            position: relative;
+            top: 10px;
+            left: 10px;
+
+            animation-name: MoveToRight;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+
+            animation-iteration-count: infinite; /* The number of times it performs the animation */
+            animation-direction: alternate; /* By default it is set to normal */
+        }
+
+        @keyframes MoveToRight { /* MoveToRight is a random name */
+
+            from{left: 10px;}
+
+            to{left: 100px;}
+        }
+
+        .box1 {
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            background-color: rgb(228, 149, 92);
+            border: 2px solid black;
+            border-radius: 10px;
+            position: relative;
+            top: 120px;
+            left: 10px;
+
+            animation-name: Complex;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes Complex { 
+
+            0% {left: 10px; top: 120px;}
+            50% {left: 150px; top: 300px;}
+            100% {left: 300px; top: 120px;}
+        }  /* Here the % is the time, eg. here total time is 2s so 50% is 1s thus it  should reach left: 150px; top: 300px; in 1s */
+
+        .progress_container{
+            height: 20px;
+            width: 600px;
+            background-color: beige;
+            border: 2px solid black;
+            border-radius: 20px;
+            position: relative;
+            top: 400px;
+        }
+
+        .progress_bar{
+            height: 100%;
+            width: 0px;
+            border-radius: 20px;
+            background-color: #009999;
+
+            animation-name: progressbar;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+
+            animation-iteration-count: 1;
+            
+        }
+
+        @keyframes progressbar {
+            from{width: 0px;}
+            to{width: 600px;}
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">Animation</div>
+    <div class="box1">Animation</div><br>
+
+    <div class="progress_container">
+        <div class="progress_bar"></div>
+    </div>
+
+</body>
+</html>
