@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforms & Animation</title>
+    <style>
+
+        /* Transform-Rotate */
+
+        .box{
+            height: 50px;
+            width: 100px;
+            text-align: center;
+            background-color: #009999;
+            border: 2px solid black;
+            border-radius: 15px;
+            transform: rotate(45deg);
+        }
+
+        .box1{
+            height: 50px;
+            width: 100px;
+            text-align: center;
+            background-color: #009999;
+            border: 2px solid black;
+            border-radius: 15px;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .box1:hover{
+            transform: rotate(180deg);
+        }
+
+        .box2{
+            height: 50px;
+            width: 100px;
+            text-align: center;
+            background-color: #009999;
+            border: 2px solid black;
+            border-radius: 15px;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .box2:hover{
+            transform: rotatex(45deg);
+        }
+
+        .box3{
+            height: 50px;
+            width: 100px;
+            text-align: center;
+            background-color: #009999;
+            border: 2px solid black;
+            border-radius: 15px;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .box3:hover{
+            transform: rotatey(45deg);
+        }
+
+        /* Transform-Scale */
+
+        .box4{
+            height: 50px;
+            width: 100px;
+            text-align: center;
+            background-color: #009999;
+            border: 2px solid black;
+            border-radius: 15px;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .box4:hover{
+            transform: scale(2);
+        }
+
+        /* Transform-Translate */
+
+        .box5{
+            height: 50px;
+            width: 100px;
+            text-align: center;
+            background-color: #009999;
+            border: 2px solid black;
+            border-radius: 15px;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .box5:hover{
+            transform: translate(50px); /* For opp direction movement use translatey or minus sign */
+        }
+
+        .box6{
+            height: 50px;
+            width: 100px;
+            text-align: center;
+            background-color: #009999;
+            border: 2px solid black;
+            border-radius: 15px;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .box6:hover{
+            transform: translate(50px,50px);
+        }
+
+        /* Transform-Skew */
+
+        .box7{
+            height: 50px;
+            width: 100px;
+            text-align: center;
+            background-color: #009999;
+            border: 2px solid black;
+            border-radius: 15px;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .box7:hover{
+            transform: Skew(45deg);
+        }
+    </style>
+</head>
+<body><br><br><br>
+
+    <!-- Transform-Rotate -->
+
+    <div class="box">Rotate</div><br><br><br><br>
+    <div class="box1">Rotate</div><br><br><br><br>
+    <div class="box2">Rotate</div><br><br><br><br>
+    <div class="box3">Rotate</div><br><br><br><br>
+
+    <!-- Transform-Scale -->
+
+    <div class="box4">Scale</div><br><br><br><br>
+
+    <!-- Transform-Translate -->
+
+    <div class="box5">Translate</div><br><br><br><br>
+    <div class="box6">Translate</div><br><br><br><br>
+
+    <!-- Transform-Skew -->
+
+    <div class="box7">Skew</div><br><br><br><br>
+
+</body>
+</html>
